@@ -44,6 +44,7 @@ class MyHomePage extends StatelessWidget {
         children: <Widget>[
           Container(
             width: double.infinity,
+
             // child: Card(
             //   color: Colors.indigoAccent,
             //   child: Text('Grafico'),
@@ -55,40 +56,46 @@ class MyHomePage extends StatelessWidget {
               return Card(
                   child: Row(
                 children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(2),
-                        border: Border.all(
-                            color: Colors.purple.shade200, width: 2)),
-                    padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
-                    child: Text(
-                      'R\$ ${tr.value.toStringAsFixed(2)}',
-                      style: TextStyle(
-                          fontFamily: 'Roboto-Medium',
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.purple),
+                  Expanded(
+                    child: Container(
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(2),
+                          border: Border.all(
+                              color: Colors.purple.shade200, width: 2)),
+                      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                      child: Text(
+                        'R\$ ${tr.value.toStringAsFixed(2)}',
+                        style: TextStyle(
+                            fontFamily: 'Roboto-Medium',
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.purple),
+                      ),
                     ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        tr.title,
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey.shade900),
-                      ),
-                      Text(
-                        DateFormat('d MMM y').format(tr.date),
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.grey.shade500),
-                      )
-                    ],
+                  Expanded(
+                    flex: 2,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          tr.title,
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey.shade900),
+                        ),
+                        Text(
+                          DateFormat('d MMM y').format(tr.date),
+                          style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.grey.shade500),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ));
@@ -112,7 +119,7 @@ class MyHomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       TextButton(
-                          onPressed: () => {},
+                          onPressed: () => {print(title), print(value)},
                           child: Text(
                             'Nova transação',
                             style: TextStyle(color: Colors.purple),
