@@ -1,10 +1,12 @@
 # expenses_app
 
-A simple expenses tracker application built with Flutter.
+### Status: Developing ⚒️ <br />
+
+## 📱Description
+A simple weekly expenses tracker application built with Flutter.<br /> You can check the amount you spent on a daily basis and compare with the rest of the week
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -14,3 +16,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Project on Pixel 3a
+![image](https://user-images.githubusercontent.com/28605557/124014427-e3dcaf00-d9b9-11eb-9ade-e44d06586174.png)
