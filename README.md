@@ -1,4 +1,4 @@
-# expenses_app
+# Weekly expenses
 
 ### Status: Developing ⚒️ <br />
 
